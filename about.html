@@ -1,0 +1,156 @@
+﻿<!-- about.html -->
+<!doctype html>
+<link rel="stylesheet" href="style.css">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О нас — Ваш Офис</title>
+    <meta name="description" content="О компании Ваш Офис: финансовая оценка, отчетность и консалтинг." />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a class="brand" href="index.html" aria-label="На главную">
+                <img src="logo.jpg" alt="Ваш Офис" class="brand__logo">
+            </a>
+
+            <nav class="nav" aria-label="Основная навигация">
+                <a class="nav__link" href="services.html">Услуги</a>
+                <a class="nav__link" href="valuation.html">Фин. оценка</a>
+                <a class="nav__link" href="reporting.html">Отчетность</a>
+                <a class="nav__link" href="about.html">О нас</a>
+                <a class="nav__link" href="contact.html">Контакты</a>
+            </nav>
+
+            <div class="header__actions">
+                <a class="btn btn--ghost" href="services.html">Смотреть услуги</a>
+                <a class="btn btn--primary" href="contact.html">Записаться</a>
+            </div>
+
+            <a class="burger" href="#mobile-nav" aria-label="Открыть меню">☰</a>
+        </div>
+
+        <div id="mobile-nav" class="mobile-nav" aria-label="Мобильное меню">
+            <div class="container mobile-nav__inner">
+                <div class="mobile-nav__top">
+                    <span class="mobile-nav__title">Меню</span>
+                    <a class="mobile-nav__close" href="#" aria-label="Закрыть меню">✕</a>
+                </div>
+                <a class="mobile-nav__link" href="services.html">Услуги</a>
+                <a class="mobile-nav__link" href="valuation.html">Финансовая оценка</a>
+                <a class="mobile-nav__link" href="reporting.html">Ежемесячная отчетность</a>
+                <a class="mobile-nav__link" href="about.html">О нас</a>
+                <a class="mobile-nav__link" href="contact.html">Контакты / Запись</a>
+                <div class="mobile-nav__cta">
+                    <a class="btn btn--primary btn--full" href="contact.html">Записаться</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container page-hero__inner">
+                <div>
+                    <div class="badge">Про подход</div>
+                    <h1 class="page-hero__title">О нас</h1>
+                    <p class="page-hero__text">
+                        «Ваш Офис» помогает бизнесу понимать финансы: где прибыль, где риски и что делать дальше.
+                        Наша задача — сделать цифры понятными и полезными для решений.
+                    </p>
+                    <div class="page-hero__actions">
+                        <a class="btn btn--primary" href="contact.html">Записаться</a>
+                        <a class="btn btn--ghost" href="services.html">Услуги</a>
+                    </div>
+                </div>
+
+                <div class="page-hero__side">
+                    <div class="info-card">
+                        <h3>Ценности</h3>
+                        <ul class="ul">
+                            <li>Прозрачность</li>
+                            <li>Понятные отчеты</li>
+                            <li>Конкретные действия</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--soft">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="section__title">Что нас отличает</h2>
+                    <p class="section__subtitle">Без сравнения с конкурентами — просто про пользу.</p>
+                </div>
+
+                <div class="steps">
+                    <div class="step">
+                        <div class="step__num">1</div>
+                        <h3 class="step__title">Простые выводы</h3>
+                        <p class="step__text">Говорим на языке бизнеса, а не бухгалтерских терминов.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step__num">2</div>
+                        <h3 class="step__title">Системность</h3>
+                        <p class="step__text">Показываем метрики и регулярность, чтобы финансы стали управляемыми.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step__num">3</div>
+                        <h3 class="step__title">Фокус на результат</h3>
+                        <p class="step__text">В конце всегда есть конкретный план действий, а не «отчет ради отчета».</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container cta__inner">
+                <div class="cta__text">
+                    <h2 class="cta__title">Готовы навести порядок в финансах?</h2>
+                    <p class="cta__subtitle">Начните с бесплатной консультации — предложим следующий шаг.</p>
+                </div>
+                <div class="cta__actions">
+                    <a class="btn btn--primary btn--big" href="contact.html">Записаться</a>
+                    <a class="btn btn--ghost btn--big" href="valuation.html">Финансовая оценка</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <div class="brand brand--footer">
+                    <img src="logo.jpg" alt="Ваш Офис" class="brand__logo">
+                </div>
+                <p class="footer__text">Финансовая оценка, ежемесячная отчетность и консалтинг.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Навигация</h4>
+                <a class="footer__link" href="services.html">Услуги</a>
+                <a class="footer__link" href="valuation.html">Финансовая оценка</a>
+                <a class="footer__link" href="reporting.html">Отчетность</a>
+                <a class="footer__link" href="about.html">О нас</a>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Контакты</h4>
+                <a class="footer__link" href="contact.html">Страница записи</a>
+                <a class="footer__link" href="mailto:hello@vashofis.ru">hello@vashofis.ru</a>
+                <a class="footer__link" href="#">Telegram: @vashofis</a>
+            </div>
+        </div>
+
+        <div class="container footer__bottom">
+            <span>© <span id="year">2025</span> Ваш Офис</span>
+            <span class="footer__small">Lera <3</span>
+        </div>
+
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+
+</body>
+</html>

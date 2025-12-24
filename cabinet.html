@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Личный кабинет — Ваш офис</title>
+  <meta name="description" content="Личный кабинет: вход/регистрация и пример дэшбордов, графиков и отчетов (статическая версия без JS)." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- shared header -->
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <img src="logo.jpg" alt="Ваш Офис" class="brand__logo">
+    </a>
+
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="nav__link" href="services.html">Услуги</a>
+      <a class="nav__link" href="accounting.html">Бух. консалтинг</a>
+      <a class="nav__link" href="cabinet.html">Личный кабинет</a>
+      <a class="nav__link" href="valuation.html">Фин. оценка</a>
+      <a class="nav__link" href="reporting.html">Отчетность</a>
+      <a class="nav__link" href="about.html">О нас</a>
+      <a class="nav__link" href="contact.html">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--ghost" href="services.html">Смотреть услуги</a>
+      <a class="btn btn--ghost" href="cabinet.html">Личный кабинет</a>
+      <a class="btn btn--primary" href="contact.html">Записаться</a>
+    </div>
+
+    <a class="burger" href="#mobile-nav" aria-label="Открыть меню">☰</a>
+  </div>
+
+  <div id="mobile-nav" class="mobile-nav" aria-label="Мобильное меню">
+    <div class="container mobile-nav__inner">
+      <div class="mobile-nav__top">
+        <span class="mobile-nav__title">Меню</span>
+        <a class="mobile-nav__close" href="#" aria-label="Закрыть меню">✕</a>
+      </div>
+
+      <a class="mobile-nav__link" href="services.html">Услуги</a>
+      <a class="mobile-nav__link" href="accounting.html">Бухгалтерский консалтинг</a>
+      <a class="mobile-nav__link" href="cabinet.html">Личный кабинет</a>
+      <a class="mobile-nav__link" href="valuation.html">Финансовая оценка</a>
+      <a class="mobile-nav__link" href="reporting.html">Ежемесячная отчетность</a>
+      <a class="mobile-nav__link" href="about.html">О нас</a>
+      <a class="mobile-nav__link" href="contact.html">Контакты / Запись</a>
+
+      <div class="mobile-nav__cta">
+        <a class="btn btn--primary btn--full" href="contact.html">Записаться</a>
+        <a class="btn btn--ghost btn--full" href="cabinet.html">Личный кабинет</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <div>
+        <div class="badge">Личный кабинет</div>
+        <h1 class="page-hero__title">Вход, регистрация и отчёты</h1>
+        <p class="page-hero__text">
+          Так как вы просили без JavaScript/скриптов и без баз данных, ниже — статическая демонстрация:
+          формы входа/регистрации (без сохранения) и пример дэшбордов/отчётов.
+        </p>
+        <div class="page-hero__actions">
+          <a class="btn btn--primary btn--big" href="#dash">Перейти к дэшборду</a>
+          <a class="btn btn--ghost btn--big" href="accounting.html">Бухгалтерский консалтинг</a>
+        </div>
+      </div>
+
+      <div class="page-hero__side">
+        <div class="info-card">
+          <h3>Важно</h3>
+          <p>Настоящая авторизация и «живые» отчёты требуют серверной части. Здесь — дизайн и структура страниц.</p>
+          <p class="note">Можно подключить backend позже, не меняя верстку.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container auth">
+      <div class="section__head">
+        <h2 class="section__title">Регистрация и вход</h2>
+        <p class="section__subtitle">Формы сделаны без скриптов. Кнопки ведут на демонстрационный дэшборд ниже.</p>
+      </div>
+
+      <div class="auth__cols">
+        <form class="form" action="#dash" method="get">
+          <h3 style="margin:0;">Вход</h3>
+          <label class="field">
+            <span>Email</span>
+            <input class="input" type="email" name="email" placeholder="name@company.kz" required>
+          </label>
+          <label class="field">
+            <span>Пароль</span>
+            <input class="input" type="password" name="password" placeholder="••••••••" required>
+          </label>
+          <button class="btn btn--primary btn--full" type="submit">Войти</button>
+          <p class="muted" style="margin:0;">*В демо‑версии данные не проверяются и не сохраняются.</p>
+        </form>
+
+        <form class="form" action="#dash" method="get">
+          <h3 style="margin:0;">Регистрация</h3>
+          <label class="field">
+            <span>Компания</span>
+            <input class="input" type="text" name="company" placeholder="Название компании" required>
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input class="input" type="email" name="email" placeholder="name@company.kz" required>
+          </label>
+          <label class="field">
+            <span>Пароль</span>
+            <input class="input" type="password" name="password" placeholder="Минимум 8 символов" required>
+          </label>
+          <button class="btn btn--ghost btn--full" type="submit">Создать аккаунт</button>
+          <p class="muted" style="margin:0;">*В демо‑версии аккаунт создаётся «визуально» и ведёт к дэшборду.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Дэшборды и отчёты</h2>
+        <p class="section__subtitle">Переключение вкладок реализовано через якоря и CSS :target (без JS).</p>
+      </div>
+
+      <!-- anchors for :target -->
+      <a id="dash"></a>
+      <a id="reports"></a>
+      <a id="docs"></a>
+
+      <div class="tabs">
+        <a class="tab" href="#dash">Дэшборд</a>
+        <a class="tab" href="#reports">Отчёты</a>
+        <a class="tab" href="#docs">Документы</a>
+      </div>
+
+      <div class="cabinet-panels">
+        <section id="panel-dash" class="tab-panel">
+          <div class="kpis" aria-label="KPI карточки">
+            <div class="kpi">
+              <p class="kpi__label">Выручка (месяц)</p>
+              <p class="kpi__value">₸ 12.4M</p>
+            </div>
+            <div class="kpi">
+              <p class="kpi__label">Расходы (месяц)</p>
+              <p class="kpi__value">₸ 8.1M</p>
+            </div>
+            <div class="kpi">
+              <p class="kpi__label">Маржа</p>
+              <p class="kpi__value">34%</p>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="chart">
+              <h3 class="chart__title">ДДС (последние 6 месяцев)</h3>
+              <div class="bars" aria-label="Статический график столбиков">
+                <div class="bars__item" style="height:35%"><span>Июл</span></div>
+                <div class="bars__item" style="height:55%"><span>Авг</span></div>
+                <div class="bars__item" style="height:42%"><span>Сен</span></div>
+                <div class="bars__item" style="height:70%"><span>Окт</span></div>
+                <div class="bars__item" style="height:63%"><span>Ноя</span></div>
+                <div class="bars__item" style="height:78%"><span>Дек</span></div>
+              </div>
+              <p class="muted" style="margin:10px 0 0;">*Это макет (пример визуализации). Реальные данные подключаются на сервере.</p>
+            </div>
+
+            <div class="panel">
+              <h3>Что дальше</h3>
+              <ol class="ol">
+                <li>Загрузить выписки и первичку (в реальной версии — через кабинет).</li>
+                <li>Сделать план‑факт и контроль кассовых разрывов.</li>
+                <li>Проверить налоговые риски по договорам.</li>
+              </ol>
+              <div class="mini-cta">
+                <span>Нужна помощь?</span>
+                <a class="btn btn--primary" href="accounting.html">Бух. консалтинг</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="panel-reports" class="tab-panel">
+          <div class="panel">
+            <h3>Отчёты (пример)</h3>
+            <table class="table" aria-label="Таблица отчетов">
+              <thead>
+                <tr>
+                  <th>Период</th>
+                  <th>Отчёт</th>
+                  <th>Статус</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Декабрь 2025</td>
+                  <td>ДДС + план‑факт</td>
+                  <td>Готово</td>
+                </tr>
+                <tr>
+                  <td>Ноябрь 2025</td>
+                  <td>P&amp;L (Прибыль и убытки)</td>
+                  <td>Готово</td>
+                </tr>
+                <tr>
+                  <td>Октябрь 2025</td>
+                  <td>Метрики: маржа / CAC / LTV</td>
+                  <td>В работе</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="mini-cta" style="margin-top:14px;">
+              <span>Хотите такие отчёты ежемесячно?</span>
+              <a class="btn btn--primary" href="reporting.html">Ежемесячная отчетность</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="panel-docs" class="tab-panel">
+          <div class="panel">
+            <h3>Документы (пример)</h3>
+            <p class="muted" style="margin-top:0;">
+              В статической версии файлы не загружаются. Ниже — структура, как это будет выглядеть.
+            </p>
+            <div class="contact-list" aria-label="Список документов">
+              <a class="contact-item" href="#">Акт сверки (пример) — PDF</a>
+              <a class="contact-item" href="#">Договор поставки (пример) — DOCX</a>
+              <a class="contact-item" href="#">Реестр платежей (пример) — XLSX</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- shared footer -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__col">
+      <div class="brand brand--footer">
+        <img src="logo.jpg" alt="Ваш Офис" class="brand__logo">
+      </div>
+      <p class="footer__text">
+        Финансовая оценка, ежемесячная отчетность и консалтинг для малого и среднего бизнеса.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Навигация</h4>
+      <a class="footer__link" href="services.html">Услуги</a>
+      <a class="footer__link" href="accounting.html">Бухгалтерский консалтинг</a>
+      <a class="footer__link" href="cabinet.html">Личный кабинет</a>
+      <a class="footer__link" href="valuation.html">Финансовая оценка</a>
+      <a class="footer__link" href="reporting.html">Отчетность</a>
+      <a class="footer__link" href="about.html">О нас</a>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <a class="footer__link" href="contact.html">Страница записи</a>
+      <a class="footer__link" href="mailto:hello@finstart.ru">hello@finstart.ru</a>
+      <a class="footer__link" href="#">Telegram: @finstart</a>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <span>© 2025 Ваш офис</span>
+    <span class="footer__small">Lera &lt;3</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+﻿<!-- contact.html -->
+<!doctype html>
+<link rel="stylesheet" href="style.css">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты и запись — Ваш Офис</title>
+    <meta name="description" content="Запись на финансовую оценку, отчетность и консалтинг. Контакты Ваш Офис." />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a class="brand" href="index.html" aria-label="На главную">
+                <img src="logo.jpg" alt="Ваш Офис" class="brand__logo">
+            </a>
+
+            <nav class="nav" aria-label="Основная навигация">
+                <a class="nav__link" href="services.html">Услуги</a>
+                <a class="nav__link" href="valuation.html">Фин. оценка</a>
+                <a class="nav__link" href="reporting.html">Отчетность</a>
+                <a class="nav__link" href="about.html">О нас</a>
+                <a class="nav__link" href="contact.html">Контакты</a>
+            </nav>
+
+            <div class="header__actions">
+                <a class="btn btn--ghost" href="services.html">Смотреть услуги</a>
+                <a class="btn btn--primary" href="#form">Записаться</a>
+            </div>
+
+            <a class="burger" href="#mobile-nav" aria-label="Открыть меню">☰</a>
+        </div>
+
+        <div id="mobile-nav" class="mobile-nav" aria-label="Мобильное меню">
+            <div class="container mobile-nav__inner">
+                <div class="mobile-nav__top">
+                    <span class="mobile-nav__title">Меню</span>
+                    <a class="mobile-nav__close" href="#" aria-label="Закрыть меню">✕</a>
+                </div>
+                <a class="mobile-nav__link" href="services.html">Услуги</a>
+                <a class="mobile-nav__link" href="valuation.html">Финансовая оценка</a>
+                <a class="mobile-nav__link" href="reporting.html">Ежемесячная отчетность</a>
+                <a class="mobile-nav__link" href="about.html">О нас</a>
+                <a class="mobile-nav__link" href="contact.html">Контакты / Запись</a>
+                <div class="mobile-nav__cta">
+                    <a class="btn btn--primary btn--full" href="#form">Записаться</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container page-hero__inner">
+                <div>
+                    <div class="badge">Запись онлайн</div>
+                    <h1 class="page-hero__title">Контакты и запись</h1>
+                    <p class="page-hero__text">
+                        Оставьте заявку — мы уточним задачу и предложим удобный формат:
+                        финансовая оценка, отчетность или консалтинг.
+                    </p>
+                    <div class="page-hero__actions">
+                        <a class="btn btn--primary" href="#form">Оставить заявку</a>
+                        <a class="btn btn--ghost" href="valuation.html">Начать с оценки</a>
+                    </div>
+                </div>
+
+                <div class="page-hero__side">
+                    <div class="info-card">
+                        <h3>Контакты</h3>
+                        <p class="muted">Пишите — ответим в рабочее время.</p>
+                        <div class="contact-list">
+                            <a class="contact-item" href="mailto:hello@vashofis.ru">hello@vashofis.ru</a>
+                            <a class="contact-item" href="#">Telegram: @vashofis</a>
+                            <a class="contact-item" href="#">WhatsApp: +7 (999) 000-00-00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--soft" id="form">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="section__title">Форма заявки</h2>
+                    <p class="section__subtitle">Без базы данных: отправка через почту (mailto). Можно заменить на Formspree.</p>
+                </div>
+
+                <div class="grid-2">
+                    <form class="form" action="mailto:hello@vashofis.ru" method="post" enctype="text/plain">
+                        <label class="field">
+                            <span>Имя</span>
+                            <input class="input" type="text" name="name" placeholder="Как к вам обращаться?" required>
+                        </label>
+
+                        <label class="field">
+                            <span>Телефон или Email</span>
+                            <input class="input" type="text" name="contact" placeholder="+7... или email" required>
+                        </label>
+
+                        <label class="field">
+                            <span>Услуга</span>
+                            <select class="input" name="service" required>
+                                <option value="Финансовая оценка">Финансовая оценка</option>
+                                <option value="Ежемесячная отчетность">Ежемесячная отчетность</option>
+                                <option value="Финансовый консалтинг">Финансовый консалтинг</option>
+                            </select>
+                        </label>
+
+                        <label class="field">
+                            <span>Комментарий</span>
+                            <textarea class="input" name="message" rows="5" placeholder="Коротко опишите задачу"></textarea>
+                        </label>
+
+                        <button class="btn btn--primary btn--big" type="submit">Отправить</button>
+                        <p class="muted" style="margin:10px 0 0;">
+                            Если mailto не работает: укажите форму Formspree/Google Forms — и мы заменим action.
+                        </p>
+                    </form>
+
+                    <div class="panel">
+                        <h3>Что будет дальше?</h3>
+                        <ol class="ol">
+                            <li>Мы свяжемся и уточним задачу</li>
+                            <li>Скажем, какие данные нужны</li>
+                            <li>Назначим созвон и старт работ</li>
+                        </ol>
+
+                        <div class="mini-cta">
+                            <div>
+                                <b>Начать с финансовой оценки</b>
+                                <div class="muted">Быстрый шаг, чтобы понять картину.</div>
+                            </div>
+                            <a class="btn btn--primary" href="valuation.html">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <div class="brand brand--footer">
+                    <img src="logo.jpg" alt="Ваш Офис" class="brand__logo">
+                </div>
+                <p class="footer__text">Финансовая оценка, ежемесячная отчетность и консалтинг.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Навигация</h4>
+                <a class="footer__link" href="services.html">Услуги</a>
+                <a class="footer__link" href="valuation.html">Финансовая оценка</a>
+                <a class="footer__link" href="reporting.html">Отчетность</a>
+                <a class="footer__link" href="about.html">О нас</a>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Контакты</h4>
+                <a class="footer__link" href="mailto:hello@vashofis.ru">hello@vashofis.ru</a>
+                <a class="footer__link" href="#">Telegram: @vashofis</a>
+                <a class="footer__link" href="#">WhatsApp: +7 (999) 000-00-00</a>
+            </div>
+        </div>
+
+        <div class="container footer__bottom">
+            <span>© <span id="year">2025</span> Ваш Офис</span>
+            <span class="footer__small">Lera <3</span>
+        </div>
+
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+
+</body>
+</html>

@@ -1,13 +1,12 @@
 ﻿<!-- services.html -->
 <!doctype html>
-<link rel="stylesheet" href="style.css">
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Услуги — Ваш Офис</title>
-    <meta name="description" content="Финансовая оценка, ежемесячная отчетность, финансовый консалтинг — Ваш Офис." />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="description" content="Финансовая оценка, ежемесячная отчетность, финансовый и бухгалтерский консалтинг — Ваш Офис." />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -19,6 +18,8 @@
 
             <nav class="nav" aria-label="Основная навигация">
                 <a class="nav__link" href="services.html">Услуги</a>
+                <a class="nav__link" href="accounting.html">Бух. консалтинг</a>
+                <a class="nav__link" href="cabinet.html">Личный кабинет</a>
                 <a class="nav__link" href="valuation.html">Фин. оценка</a>
                 <a class="nav__link" href="reporting.html">Отчетность</a>
                 <a class="nav__link" href="about.html">О нас</a>
@@ -27,6 +28,7 @@
 
             <div class="header__actions">
                 <a class="btn btn--ghost" href="services.html">Смотреть услуги</a>
+                <a class="btn btn--ghost" href="cabinet.html">Личный кабинет</a>
                 <a class="btn btn--primary" href="contact.html">Записаться</a>
             </div>
 
@@ -40,6 +42,8 @@
                     <a class="mobile-nav__close" href="#" aria-label="Закрыть меню">✕</a>
                 </div>
                 <a class="mobile-nav__link" href="services.html">Услуги</a>
+                <a class="mobile-nav__link" href="accounting.html">Бухгалтерский консалтинг</a>
+                <a class="mobile-nav__link" href="cabinet.html">Личный кабинет</a>
                 <a class="mobile-nav__link" href="valuation.html">Финансовая оценка</a>
                 <a class="mobile-nav__link" href="reporting.html">Ежемесячная отчетность</a>
                 <a class="mobile-nav__link" href="about.html">О нас</a>
@@ -55,7 +59,7 @@
         <section class="page-hero">
             <div class="container page-hero__inner">
                 <div>
-                    <div class="badge">3 направления</div>
+                    <div class="badge">4 направления</div>
                     <h1 class="page-hero__title">Услуги</h1>
                     <p class="page-hero__text">
                         Выберите формат: разовая финансовая оценка, регулярная отчетность или консалтинг под задачу.
@@ -136,6 +140,28 @@
                             </div>
                         </div>
                     </article>
+
+
+                    <article class="card">
+                        <div class="card__media card__media--accounting">
+                            <div class="card__tag">Новая услуга</div>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Бухгалтерский консалтинг</h3>
+                            <p class="card__text">
+                                Консультации по бухгалтерскому и налоговому учету, проверка первичных документов,
+                                подготовка к закрытию периода и снижению рисков.
+                            </p>
+                            <div class="card__meta">
+                                <span class="chip">ИП / ТОО</span>
+                                <span class="chip chip--accent">Снижение рисков</span>
+                            </div>
+                            <div class="card__actions">
+                                <a class="btn btn--primary" href="contact.html">Записаться</a>
+                                <a class="btn btn--link" href="accounting.html">Подробнее →</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -165,6 +191,8 @@
             <div class="footer__col">
                 <h4 class="footer__title">Навигация</h4>
                 <a class="footer__link" href="services.html">Услуги</a>
+                <a class="footer__link" href="accounting.html">Бухгалтерский консалтинг</a>
+                <a class="footer__link" href="cabinet.html">Личный кабинет</a>
                 <a class="footer__link" href="valuation.html">Финансовая оценка</a>
                 <a class="footer__link" href="reporting.html">Отчетность</a>
                 <a class="footer__link" href="about.html">О нас</a>
@@ -178,11 +206,11 @@
         </div>
 
         <div class="container footer__bottom">
-            <span>© <span id="year">2025</span> Ваш Офис</span>
+            <span>© 2025 Ваш Офис</span>
             <span class="footer__small">Lera <3</span>
         </div>
 
-        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+        
     </footer>
 
 </body>
